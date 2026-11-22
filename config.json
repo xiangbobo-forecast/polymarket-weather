@@ -1,0 +1,21 @@
+{
+  "gamma_tag_id": 103040,
+  "title_prefix": "Highest temperature in",
+  "skip_cities": ["Hong Kong"],
+  "ensemble_models": ["gfs025", "ecmwf_ifs025", "icon_seamless"],
+  "openmeteo_chunk": 8,
+  "past_days_for_bias": 3,
+  "bias_shrink": 0.5,
+  "bias_clip_c": 3.0,
+  "nowcast_clip_c": 5.0,
+  "nowcast_weight": 0.5,
+  "spread_inflation": 1.2,
+  "kernel_sd_base_c": 0.8,
+  "kernel_sd_per_lead_day_c": 0.3,
+  "min_edge": 0.08,
+  "min_ask": 0.05,
+  "max_ask": 0.95,
+  "stake_usd": 2.0,
+  "max_new_stake_per_day_usd": 10.0,
+  "fee_rate": 0.01
+}
