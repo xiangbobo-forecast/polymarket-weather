@@ -1,0 +1,43 @@
+name: metac-backup-trigger
+
+# Backup for xiangbobo-forecast/metac-bot-template: its own cron stopped firing
+# on 2026-11-23 after GitHub auto-disabled and re-enabled Actions there.
+# Every 30 min, if the tournament workflow has not started in the last 25 min,
+# start one single pass via workflow_dispatch. Skips quietly when the secret is missing.
+
+on:
+  schedule:
+    - cron: '26,56 * * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: metac-backup-trigger
+  cancel-in-progress: false
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Dispatch tournament run if none recently
+        env:
+          TOKEN: ${{ secrets.METAC_DISPATCH_TOKEN }}
+          REPO: xiangbobo-forecast/metac-bot-template
+          WF: run_bot_on_tournament.yaml
+        run: |
+          if [ -z "$TOKEN" ]; then echo "METAC_DISPATCH_TOKEN not set; skipping"; exit 0; fi
+          api() { curl -sS -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" "$@"; }
+          last=$(api "https://api.github.com/repos/$REPO/actions/workflows/$WF/runs?per_page=1" | jq -r '.workflow_runs[0].created_at // empty')
+          echo "last run: ${last:-none}"
+          if [ -n "$last" ]; then
+            age=$(( $(date -u +%s) - $(date -u -d "$last" +%s) ))
+            echo "age: ${age}s"
+            if [ "$age" -lt 1500 ]; then echo "recent run exists; skipping"; exit 0; fi
+          fi
+          code=$(api -o /dev/stderr -w '%{http_code}' -X POST \
+            "https://api.github.com/repos/$REPO/actions/workflows/$WF/dispatches" \
+            -d '{"ref":"main","inputs":{"loop_minutes":"0"}}')
+          echo "dispatch HTTP $code"
+          [ "$code" = "204" ]
