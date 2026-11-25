@@ -2,10 +2,10 @@
  "last_run": {
   "cities": 51,
   "errors": [],
-  "events_modeled": 144,
-  "events_scanned": 152,
+  "events_modeled": 143,
+  "events_scanned": 151,
   "new_trades": 0,
-  "settled_events": 4,
+  "settled_events": 0,
   "skipped": [
    "Hong Kong 2026-11-25: 配置跳过（结算源非 METAR）",
    "Hong Kong 2026-11-26: 配置跳过（结算源非 METAR）",
@@ -15,8 +15,8 @@
    "Zhengzhou 2026-05-20: 描述里没找到 ICAO 机场代码",
    "Zhengzhou 2026-05-21: 描述里没找到 ICAO 机场代码"
   ],
-  "snapshot_rows": 1584,
-  "ts_utc": "2026-11-25T10:25:21+00:00"
+  "snapshot_rows": 1573,
+  "ts_utc": "2026-11-25T13:41:29+00:00"
  },
  "open_stake_usd": 12.0,
  "pnl_usd": 2.61,
@@ -41,7 +41,7 @@
  "trades_open": 6,
  "trades_settled": 14,
  "trades_total": 20,
- "updated_utc": "2026-11-25T10:25:21+00:00",
+ "updated_utc": "2026-11-25T13:41:29+00:00",
  "win_rate": 0.4286,
  "wins": 6
 }
