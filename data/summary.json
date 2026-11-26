@@ -2,8 +2,8 @@
  "last_run": {
   "cities": 51,
   "errors": [],
-  "events_modeled": 128,
-  "events_scanned": 146,
+  "events_modeled": 126,
+  "events_scanned": 134,
   "new_trades": 0,
   "settled_events": 0,
   "skipped": [
@@ -15,8 +15,8 @@
    "Zhengzhou 2026-05-20: 描述里没找到 ICAO 机场代码",
    "Zhengzhou 2026-05-21: 描述里没找到 ICAO 机场代码"
   ],
-  "snapshot_rows": 1408,
-  "ts_utc": "2026-11-26T16:22:32+00:00"
+  "snapshot_rows": 1386,
+  "ts_utc": "2026-11-26T19:20:27+00:00"
  },
  "open_stake_usd": 10.0,
  "pnl_usd": -4.02,
@@ -41,7 +41,7 @@
  "trades_open": 5,
  "trades_settled": 20,
  "trades_total": 25,
- "updated_utc": "2026-11-26T16:22:32+00:00",
+ "updated_utc": "2026-11-26T19:20:27+00:00",
  "win_rate": 0.35,
  "wins": 7
 }
