@@ -2,45 +2,46 @@
  "last_run": {
   "cities": 51,
   "errors": [],
-  "events_modeled": 110,
-  "events_scanned": 117,
+  "events_modeled": 138,
+  "events_scanned": 148,
   "new_trades": 0,
-  "settled_events": 2,
+  "settled_events": 9,
   "skipped": [
    "Hong Kong 2026-11-26: 配置跳过（结算源非 METAR）",
    "Hong Kong 2026-11-27: 配置跳过（结算源非 METAR）",
+   "Hong Kong 2026-11-28: 配置跳过（结算源非 METAR）",
    "Jinan 2026-05-20: 描述里没找到 ICAO 机场代码",
    "Jinan 2026-05-21: 描述里没找到 ICAO 机场代码",
    "Zhengzhou 2026-05-20: 描述里没找到 ICAO 机场代码",
    "Zhengzhou 2026-05-21: 描述里没找到 ICAO 机场代码"
   ],
-  "snapshot_rows": 1210,
-  "ts_utc": "2026-11-26T04:23:04+00:00"
+  "snapshot_rows": 1518,
+  "ts_utc": "2026-11-26T07:42:13+00:00"
  },
- "open_stake_usd": 16.0,
- "pnl_usd": 1.98,
- "roi": 0.0583,
+ "open_stake_usd": 12.0,
+ "pnl_usd": -2.02,
+ "roi": -0.0531,
  "scoring": {
   "first": {
-   "events": 159,
-   "market_brier": 0.6126,
-   "market_logloss": 1.3136,
-   "model_brier": 0.6666,
-   "model_logloss": 1.463
+   "events": 168,
+   "market_brier": 0.6272,
+   "market_logloss": 1.3649,
+   "model_brier": 0.6742,
+   "model_logloss": 1.4811
   },
   "last": {
-   "events": 159,
-   "market_brier": 0.001,
-   "market_logloss": 0.0095,
-   "model_brier": 0.008,
-   "model_logloss": 0.0244
+   "events": 168,
+   "market_brier": 0.0011,
+   "market_logloss": 0.0101,
+   "model_brier": 0.0094,
+   "model_logloss": 0.0273
   }
  },
- "staked_settled_usd": 34.0,
- "trades_open": 8,
- "trades_settled": 17,
+ "staked_settled_usd": 38.0,
+ "trades_open": 6,
+ "trades_settled": 19,
  "trades_total": 25,
- "updated_utc": "2026-11-26T04:23:04+00:00",
- "win_rate": 0.4118,
+ "updated_utc": "2026-11-26T07:42:13+00:00",
+ "win_rate": 0.3684,
  "wins": 7
 }
