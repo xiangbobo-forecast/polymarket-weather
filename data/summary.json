@@ -2,10 +2,10 @@
  "last_run": {
   "cities": 51,
   "errors": [],
-  "events_modeled": 138,
-  "events_scanned": 148,
+  "events_modeled": 144,
+  "events_scanned": 152,
   "new_trades": 0,
-  "settled_events": 9,
+  "settled_events": 5,
   "skipped": [
    "Hong Kong 2026-11-27: 配置跳过（结算源非 METAR）",
    "Hong Kong 2026-11-28: 配置跳过（结算源非 METAR）",
@@ -15,33 +15,33 @@
    "Zhengzhou 2026-05-20: 描述里没找到 ICAO 机场代码",
    "Zhengzhou 2026-05-21: 描述里没找到 ICAO 机场代码"
   ],
-  "snapshot_rows": 1518,
-  "ts_utc": "2026-11-27T07:40:48+00:00"
+  "snapshot_rows": 1584,
+  "ts_utc": "2026-11-27T10:24:28+00:00"
  },
  "open_stake_usd": 10.0,
  "pnl_usd": 1.88,
  "roi": 0.0376,
  "scoring": {
   "first": {
-   "events": 216,
-   "market_brier": 0.6768,
-   "market_logloss": 1.5388,
-   "model_brier": 0.6981,
-   "model_logloss": 1.5384
+   "events": 221,
+   "market_brier": 0.6827,
+   "market_logloss": 1.5618,
+   "model_brier": 0.6998,
+   "model_logloss": 1.5425
   },
   "last": {
-   "events": 216,
-   "market_brier": 0.0009,
-   "market_logloss": 0.0094,
-   "model_brier": 0.008,
-   "model_logloss": 0.0247
+   "events": 221,
+   "market_brier": 0.001,
+   "market_logloss": 0.0099,
+   "model_brier": 0.0091,
+   "model_logloss": 0.0271
   }
  },
  "staked_settled_usd": 50.0,
  "trades_open": 5,
  "trades_settled": 25,
  "trades_total": 30,
- "updated_utc": "2026-11-27T07:40:48+00:00",
+ "updated_utc": "2026-11-27T10:24:28+00:00",
  "win_rate": 0.4,
  "wins": 10
 }
